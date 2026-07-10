@@ -1,0 +1,41 @@
+# This repository's own ai-contribution-policy.yml — the standard applied to
+# itself. A worked example of the v0.1 schema, honestly filled in.
+
+schema_version: "0.1"
+
+project:
+  name: "ecogetaway/oss-ai-contribution-policy"
+  repo_url: "https://github.com/ecogetaway/oss-ai-contribution-policy"
+
+stance:
+  code: disclosed-allowed
+  documentation: disclosed-allowed
+  translations: disclosed-allowed
+  media: disclosed-allowed
+  notes: >
+    This project's own artifacts are developed with disclosed AI assistance.
+    We dogfood the standard we propose.
+
+disclosure:
+  required: true
+  mechanism: pr-template
+  granularity: tool-and-role
+
+attestations:
+  required:
+    - understands-change
+    - reviewed-output
+  optional:
+    - ran-tests          # required once this repo has automated checks; honest
+                         # about the fact that it currently mostly holds prose
+
+enforcement:
+  undisclosed_ai: request-disclosure
+  incomplete_attestation: request-completion
+  repeat_policy: maintainer-discretion
+
+review:
+  response_time_target_days: 14
+  first_time_contributors: welcome
+
+last_reviewed: "2026-07-11"

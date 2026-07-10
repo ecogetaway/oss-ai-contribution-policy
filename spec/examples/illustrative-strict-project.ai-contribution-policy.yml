@@ -1,0 +1,49 @@
+# ILLUSTRATIVE EXAMPLE — not an officially published file from any project.
+# Shows the schema expressing a *restrictive* posture honestly: a project under
+# heavy AI-contribution load that has chosen tight limits but still keeps a
+# defined, achievable pathway open. Compare with the permissive worked example
+# in this directory. Do not represent this as any real project's policy.
+
+schema_version: "0.1"
+
+project:
+  name: "example-org/high-traffic-project"
+  repo_url: "https://github.com/example-org/high-traffic-project"
+
+stance:
+  code: restricted
+  documentation: disclosed-allowed
+  translations: prohibited
+  media: prohibited
+  notes: >
+    code: AI-assisted changes accepted only for issues labeled
+    "help-wanted", and only with full attestation. translations: we require
+    native-speaker review capacity we do not currently have, so translated
+    strings are not accepted from any source at this time.
+
+disclosure:
+  required: true
+  mechanism: commit-trailer
+  granularity: tool-and-role
+
+attestations:
+  required:
+    - ran-tests
+    - understands-change
+    - reviewed-output
+    - manual-verification
+  optional:
+    - license-checked
+
+enforcement:
+  undisclosed_ai: close
+  incomplete_attestation: request-completion
+  repeat_policy: >
+    Second undisclosed-AI submission from the same account: future PRs
+    require a maintainer sponsor.
+
+review:
+  response_time_target_days: 30
+  first_time_contributors: welcome
+
+last_reviewed: "2026-07-01"

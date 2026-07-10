@@ -1,0 +1,99 @@
+# ai-contribution-policy.yml — schema v0.1 (draft)
+#
+# A machine-readable AI-contribution policy, placed at the repository root as a
+# sibling to LICENSE, CODEOWNERS, and SECURITY.md. Readable by humans, CI,
+# forges, and AI coding agents — which means an agent can respect a project's
+# policy BEFORE generating a pull request, not after.
+#
+# Design commitments (see README "Maintainer Principles"):
+#   - Verification over detection: fields attest human actions (tests run,
+#     change understood), never "was this AI?" — an unanswerable question.
+#   - Clarity over complexity: writable in ten minutes, readable in one.
+#   - Openness over gatekeeping: the file exists to keep good-faith pathways
+#     open, not only to say no.
+#
+# This file is the schema/reference, not something to copy verbatim. Delete
+# comments you don't need. Every field is optional except `schema_version`
+# and `project`. Worked examples live in spec/examples/.
+
+schema_version: "0.1"
+
+project:
+  name: "org/repo"
+  repo_url: "https://github.com/org/repo"
+
+# ---------------------------------------------------------------------------
+# Stance — the project's position on AI-assisted contributions, per asset
+# class. One of:
+#   disclosed-allowed  — welcome if disclosed and attested (the default this
+#                        standard is designed around)
+#   restricted         — allowed only in listed circumstances (state them in
+#                        `notes`)
+#   prohibited         — not accepted; the file still helps by saying so in a
+#                        place agents and contributors will actually see
+#   unrestricted       — no disclosure expected (also worth declaring: silence
+#                        is what breeds per-PR arguments)
+# ---------------------------------------------------------------------------
+stance:
+  code: disclosed-allowed
+  documentation: disclosed-allowed
+  translations: disclosed-allowed
+  media: restricted
+  notes: >
+    Optional free text qualifying any stance above, e.g. "media: only for
+    diagrams regenerated from committed sources."
+
+# ---------------------------------------------------------------------------
+# Disclosure — what a contributor states about AI's role, and where.
+# ---------------------------------------------------------------------------
+disclosure:
+  required: true
+  # How disclosure is expressed. Common mechanisms:
+  #   pr-template   — a checkbox/field in the pull request template
+  #   commit-trailer — e.g. "Assisted-by: <tool>" on commits
+  #   either
+  mechanism: pr-template
+  # What must be disclosed. Keep it proportionate — the goal is an honest
+  # label, not a forensic report.
+  granularity: tool-and-role   # tool-and-role | role-only | binary
+
+# ---------------------------------------------------------------------------
+# Attestations — human actions the contributor affirms. These are the core of
+# verification-over-detection: every item is something a person DID, checkable
+# in principle, meaningful regardless of how the change was produced.
+# Projects choose from the shared vocabulary (or extend it; extensions should
+# be proposed upstream so the vocabulary stays portable).
+# ---------------------------------------------------------------------------
+attestations:
+  required:
+    - ran-tests            # contributor executed the test suite locally or in CI
+    - understands-change   # contributor can explain every line if asked
+    - reviewed-output      # contributor read the full diff, not just the summary
+  optional:
+    - manual-verification  # exercised the changed behavior end-to-end
+    - license-checked      # confirmed no incompatible license contamination
+
+# ---------------------------------------------------------------------------
+# Enforcement — what happens when the policy isn't followed. Stating this
+# here replaces discovering it in an angry comment thread.
+# ---------------------------------------------------------------------------
+enforcement:
+  undisclosed_ai: request-disclosure   # request-disclosure | close | label-and-review
+  incomplete_attestation: request-completion
+  # Whether repeated non-disclosure affects future contributions from the
+  # same account. Be explicit; ambiguity here is where trust erodes.
+  repeat_policy: maintainer-discretion
+
+# ---------------------------------------------------------------------------
+# Review — what contributors can expect back. Honest emptiness beats
+# aspirational fiction; an unstaffed queue declared as such is useful signal.
+# ---------------------------------------------------------------------------
+review:
+  # Target for first substantive response to a policy-compliant contribution.
+  # null = no commitment yet.
+  response_time_target_days: null
+  first_time_contributors: welcome   # welcome | restricted | not-accepted
+
+# ISO 8601 date a maintainer last reviewed this file. A stale date is itself
+# a signal.
+last_reviewed: "2026-01-01"

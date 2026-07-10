@@ -1,0 +1,41 @@
+name: Case-study candidate
+description: Nominate a real project event (closure, restriction, policy adoption, dispute, or success) worth a structured write-up
+title: "[case-study]: "
+labels:
+  - case-study-candidate
+body:
+  - type: input
+    id: project
+    attributes:
+      label: Project
+      placeholder: e.g. curl/curl
+    validations:
+      required: true
+  - type: dropdown
+    id: event_type
+    attributes:
+      label: Event type
+      options:
+        - Contribution-pathway closure
+        - External-PR restriction
+        - Policy adoption
+        - Policy dispute
+        - Disclosed-pathway success
+        - Project dissolution
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened
+      description: 2–4 sentences. What did AI-contribution pressure look like, and what did the project do?
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Primary sources
+      description: Links to the public record — issues, PRs, announcements, commits. Case studies are built only on verifiable sources.
+    validations:
+      required: true

@@ -1,0 +1,38 @@
+name: Pilot signup
+description: Adopt ai-contribution-policy.yml in your repository as a measured pilot
+title: "[pilot]: "
+labels:
+  - pilot
+body:
+  - type: input
+    id: repo
+    attributes:
+      label: Repository
+      placeholder: e.g. org/repo
+    validations:
+      required: true
+  - type: textarea
+    id: pressure
+    attributes:
+      label: What AI-contribution pressure looks like for you today
+      description: Volume, kind (PRs, bug reports, translations), and what it costs you. Approximate is fine.
+    validations:
+      required: true
+  - type: dropdown
+    id: stance
+    attributes:
+      label: Rough intended stance
+      options:
+        - Disclosed-allowed (welcome with disclosure + attestation)
+        - Restricted (allowed in defined circumstances)
+        - Prohibited (declared clearly)
+        - Not sure yet — want help deciding
+    validations:
+      required: true
+  - type: checkboxes
+    id: baseline
+    attributes:
+      label: Measurement
+      options:
+        - label: I'm willing to have a before/after baseline documented publicly (mismatched-contribution volume, time-to-first-review).
+          required: true
