@@ -6,6 +6,10 @@ This repository defines a machine-readable standard — **`ai-contribution-polic
 
 This is the third application of an evidence-first method already published for internationalization (CACM, DevOps.com) and in progress for accessibility: document how the problem actually plays out in real repositories, then build the smallest piece of infrastructure the evidence says is missing.
 
+**Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Aniruddh Raghavendra) — an evidence-first portfolio applying one method across three under-served open source contribution domains: internationalization, accessibility, and AI contribution. First published July 2026. Full portfolio under [Companion Projects](#companion-projects) below.
+
+_Status: early evidence-gathering, developed in focused bursts while accessibility is the current priority. Nine verified catalogue entries and the first case study to date._
+
 ## Terminology used in this repo
 
 - **the policy file** = `ai-contribution-policy.yml`, the machine-readable standard this project defines
@@ -132,10 +136,13 @@ If you maintain a repository that receives AI-assisted contributions — welcome
 
 ## Companion Projects
 
-Same method, different domains — each adoption compounds the others' credibility:
+Three repositories, one method: document how a contribution domain actually fails in real repositories, then build the smallest machine-readable piece of infrastructure the evidence says is missing. Each domain's adoption compounds the others' credibility.
 
-- [oss-language-inclusion](https://github.com/ecogetaway/oss-language-inclusion) — internationalization as missing contribution infrastructure (published: CACM Blog, DevOps.com)
-- [oss-accessibility-inclusion](https://github.com/ecogetaway/oss-accessibility-inclusion) — accessibility contribution and review, with six scored case studies and a draft `a11y-signals.yml`
+| Domain | Repository | What it builds | Maturity |
+| --- | --- | --- | --- |
+| Internationalization | [oss-language-inclusion](https://github.com/ecogetaway/oss-language-inclusion) | Translated-string contribution evidence + `i18n-security-lint` CI tooling | Most developed; method published in CACM Blog and DevOps.com |
+| Accessibility | [oss-accessibility-inclusion](https://github.com/ecogetaway/oss-accessibility-inclusion) | How accessibility PRs are reviewed; review rubric + draft `a11y-signals.yml` | Active — current development focus |
+| AI contribution | [oss-ai-contribution-policy](https://github.com/ecogetaway/oss-ai-contribution-policy) | Machine-readable `ai-contribution-policy.yml` standard (verification over detection) | Early evidence-gathering |
 
 ---
 
