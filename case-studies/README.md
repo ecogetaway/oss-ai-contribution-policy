@@ -4,11 +4,11 @@ Structured write-ups of real projects' collisions with AI-assisted contribution 
 
 Anchor candidates for v0.1 (write-ups pending):
 
-| Project / event | Event type |
-| --- | --- |
-| curl — bug bounty ended under AI-generated report load | Contribution-pathway closure |
-| Ghostty — external PR restrictions | External-PR restriction |
-| tldraw — external PR restrictions | External-PR restriction |
-| Jazzband — dissolution | Project dissolution |
+| Project / event | Event type | Status |
+| --- | --- | --- |
+| [curl — bug bounty ended under AI-generated report load](curl-bug-bounty-closure.md) | Contribution-pathway closure | **Written** |
+| Ghostty — vouch system and strict AI policy | Policy adoption | Pending |
+| tldraw — external PRs closed | External-PR restriction | Pending |
+| Jazzband — dissolution | Project dissolution | Pending (claim to be verified against primary sources before drafting) |
 
 Evidence discipline: every claim traces to a public primary source. Case studies score the *process and policy response*, not the quality of any AI model.
