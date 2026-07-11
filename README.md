@@ -42,6 +42,16 @@ Projects are defending themselves anyway — with dozens of incompatible, hand-r
 
 ---
 
+## Adopt in 10 Minutes
+
+1. Copy a worked example that matches your posture — [permissive](spec/examples/oss-ai-contribution-policy.ai-contribution-policy.yml) or [strict](spec/examples/illustrative-strict-project.ai-contribution-policy.yml) — to your repository root as `ai-contribution-policy.yml`.
+2. Edit four things: your project name, your per-asset **stance**, the **attestations** you require, and what happens on **non-disclosure**.
+3. Set `last_reviewed` to today and commit. Link it from CONTRIBUTING.md.
+
+That's the whole adoption cost. Your policy is now in one predictable place — for contributors, for CI, and for AI agents that read repository files before acting. If you adopt it, [tell us](../../issues) — early adopters shape schema v0.2.
+
+---
+
 ## The Proposed Standard
 
 Three artifacts, in dependency order:
@@ -60,6 +70,20 @@ A specification for how a good-faith contributor complies: disclose role, attest
 
 ### 3. The evidence base
 A catalogue mapping 60+ existing per-project policies ([`policy-catalogue/`](policy-catalogue/)) and 5–8 deep case studies of real collisions ([`case-studies/`](case-studies/)) — so the schema encodes what projects actually need, not what sounds plausible.
+
+First nine catalogued (every entry verified against its primary source on the capture date):
+
+| Project | Stance | Distinctive feature |
+| --- | --- | --- |
+| [Ghostty](policy-catalogue/ghostty.md) | disclosed-allowed | Vouch system; public denouncement list; AI media prohibited |
+| [LLVM](policy-catalogue/llvm.md) | disclosed-allowed | `Assisted-by:` trailer; autonomous agents banned |
+| [curl](policy-catalogue/curl.md) | disclosed-allowed | Stricter rules for security reports; bug bounty ended Jan 2026 → [case study](case-studies/curl-bug-bounty-closure.md) |
+| [Godot](policy-catalogue/godot.md) | disclosed-allowed (agents) | Policy addressed to the AI agent itself |
+| [NetBSD](policy-catalogue/netbsd.md) | prohibited-unless-escalated | LLM output "presumed tainted"; core-approval exception |
+| [QEMU](policy-catalogue/qemu.md) | prohibited | Ban derived from DCO/copyright provenance |
+| [servo](policy-catalogue/servo.md) | prohibited | Four argued rationales; explicit revisit clause |
+| [Gentoo](policy-catalogue/gentoo.md) | prohibited | Council-voted 2024; packaging carve-out |
+| [tldraw](policy-catalogue/tldraw.md) | closed to external PRs | Total pathway closure, framed as temporary |
 
 **Why verification, not detection:** every detection-based approach is an arms race the detectors lose. Attestation of human review, testing, and understanding stays meaningful no matter how good the models get. That single decision is what keeps this standard from being obsolete on arrival.
 
