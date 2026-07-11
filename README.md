@@ -153,6 +153,26 @@ If you maintain a repository that receives AI-assisted contributions — welcome
 - **Long-term home:** this repository is the incubator, not the destination. Phase 4 proposes the standard into an established body (OpenSSF-shaped working group) once pilots produce evidence worth standardizing.
 - **Next concrete steps:** policy catalogue to 60+ entries; first two case studies drafted; schema v0.1 field-by-field review issue open for comment.
 
+## Anticipated Questions
+
+**Isn't this just another opinion about AI and open source?**
+No — it's a catalogue first. Nine projects' policies verified against live primary sources, one deep case study, and a schema whose every field must map to something real projects already do by hand. Where the evidence is thin, the documents say so. Opinions are cheap in this debate; the [policy catalogue](policy-catalogue/) is the part you can check.
+
+**Why not just detect AI-generated contributions?**
+Because detection is an arms race the detectors lose — accuracy degrades with every model generation, and false positives land hardest on non-native English writers and newcomers. Attestation of *human actions* (tests run, change understood, output reviewed) stays meaningful no matter how good generation gets. That single design decision is why this standard doesn't expire.
+
+**Does disclosure actually reduce the burden?**
+Honestly: measuring that is the point of the pilots. What the catalogue already shows is that the projects that kept their doors open (Ghostty, LLVM, curl, Godot) all converged independently on disclosure-plus-verification — and that curl's disclosure policy alone wasn't sufficient to save its bug bounty. We publish pilot results either way, negative findings included.
+
+**What about projects that prohibit AI contributions entirely?**
+The standard is stance-neutral. `prohibited` is a first-class value, and a machine-readable "no" is more useful than a buried one — an AI coding agent that reads the file can decline to generate the PR at all. QEMU, servo, and Gentoo's positions are documented in the catalogue with the same care as the permissive ones.
+
+**How would this ever be enforced?**
+Two layers, honestly labeled. Social: a self-certified pathway, like DCO — attestations create accountability, not proof. Technical: the file is CI-checkable and agent-readable, so undisclosed-AI handling (`request-disclosure`, `close`, `label-and-review`) is declared before the argument starts instead of invented per-PR. Enforcement that requires proving what wrote the code is exactly the arms race we refuse (see detection, above).
+
+**Who decides what goes in the standard?**
+For now: public issues in this repository, with a comment period on schema changes and a field-survival rule — a field no real policy expresses gets removed. The roadmap's endgame is handing the spec to an established standards home (OpenSSF-shaped working group) once pilots produce evidence worth standardizing. This repo is the incubator, not the throne.
+
 ## Related Work
 
 - The arXiv taxonomy of AI-contribution policies and RedMonk's policy cataloguing describe the space — neither owns a machine-readable primitive. This project builds the primitive, citing both.
