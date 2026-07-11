@@ -36,6 +36,7 @@ Projects are defending themselves anyway — with dozens of incompatible, hand-r
 
 - The trendline is active: every month of delay is another project that closes external contribution rather than manage it.
 - The consensus fix already exists in fragments — disclosure plus human verification — but has no machine-readable primitive to run on.
+- A remediation market has already emerged downstream: commercial services now charge five figures per engagement to refactor AI-generated codebases back to maintainability (e.g., [Slopfix](https://odra.dev/slopfix/), a three-engineer consultancy priced at ~$10k/week against measured code-reduction targets; captured 2026-07-11). When the *cure* is already being sold, the case for standardizing *prevention at the contribution boundary* — where the cost is a policy file and a review pathway — makes itself.
 - AI coding agents increasingly read repository files before acting. A standard policy file is the first defense that works *before* the pull request is generated, not after.
 - Institutional money and attention (OpenSSF's AI-integrity commitments, forge-level interest) arrived with this problem. The window for an evidence-backed, community-owned standard — rather than a vendor-owned one — is open now.
 
