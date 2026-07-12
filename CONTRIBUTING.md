@@ -2,6 +2,8 @@
 
 This project practices the standard it proposes. Contributions are welcome — including AI-assisted contributions, disclosed and attested. Our own policy file is [`ai-contribution-policy.yml`](ai-contribution-policy.yml) at the repository root.
 
+New here? Start with [`FAQ.md`](FAQ.md) and the adoption walkthrough in [`ADOPTION.md`](ADOPTION.md).
+
 ## Start small
 
 Every pathway begins with a single-file, easily reviewable PR. In rough order of effort:
