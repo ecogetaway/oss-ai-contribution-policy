@@ -20,6 +20,7 @@
 - [ ] Working-group proposal to an established standards home (OpenSSF-shaped).
 - [ ] Forge-level conversation: native surfacing of the policy file, the way SECURITY.md is surfaced today.
 - [ ] Agent-side adoption: at least one AI coding tool reads the file before opening PRs.
+- [ ] Candidate standardization venue to evaluate alongside OpenSSF: a DIN SPEC via the PAS procedure (Germany) — a lightweight path (three-organization consortium, publishable in a few months) distinct from AI-system certification standards like DIN SPEC 92006/92007, which govern testing AI models, not AI-assisted contribution.
 
 ## Principles that govern the roadmap
 Evidence before standard; standard before pilots; pilots before institutionalization. Each phase's output is public regardless of how flattering it is.
