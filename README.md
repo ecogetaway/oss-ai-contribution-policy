@@ -1,14 +1,22 @@
 Open source's open-contribution model is closing in real time. AI-assisted contribution has flooded maintainers with plausible-looking submissions they cannot cheaply verify — and projects are responding by shutting doors that took thirty years to open.
 
-This repository defines a machine-readable standard — **`ai-contribution-policy.yml`** — that lets a project declare its AI-contribution policy once, in a form readable by humans, CI, forges, and AI coding agents themselves. It is built on one design decision: **verification, not detection.**
+This repository defines a **draft** machine-readable shape — **`ai-contribution-policy.yml`** — that lets a project declare its AI-contribution policy once, in a form readable by humans, CI, forges, and AI coding agents. It is built on one design decision: **verification, not detection.**
 
 # OSS AI-Contribution Policy
 
-This is the third application of an evidence-first method already published for internationalization (CACM, DevOps.com) and in progress for accessibility: document how the problem actually plays out in real repositories, then build the smallest piece of infrastructure the evidence says is missing.
+**Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Aniruddh Raghavendra). Full portfolio under [Companion Projects](#companion-projects).
 
-**Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Aniruddh Raghavendra) — an evidence-first portfolio applying one method across three under-served open source contribution domains: internationalization, accessibility, and AI contribution. First published July 2026. Full portfolio under [Companion Projects](#companion-projects) below.
+_Status: early-stage — schema v0.1 drafted, **nine** verified catalogue entries, first case study complete. See [FAQ](FAQ.md)._
 
-_Status: early-stage — schema v0.1 drafted, nine verified catalogue entries, and the first case study complete._
+### Try this first
+
+| Priority | Action |
+| --- | --- |
+| **1. Primary** | [Copy a YAML example](spec/examples/) into your repo root as `ai-contribution-policy.yml` — walkthrough in [ADOPTION.md](ADOPTION.md) |
+| **2. Secondary** | Read the [policy catalogue](policy-catalogue/) (nine verified entries) before debating theory |
+| **3. Then** | [Add a catalogue entry](policy-catalogue/TEMPLATE.md) (~15 min) or open `schema-feedback` / `pilot` issues |
+
+Please do **not** ask people to star the repo. The useful signal is a copied YAML, a catalogue PR, or a schema critique.
 
 ## Terminology used in this repo
 
@@ -44,11 +52,13 @@ Projects are defending themselves anyway — with dozens of incompatible, hand-r
 
 ## Adopt in 10 Minutes
 
+Full before/after: [`ADOPTION.md`](ADOPTION.md). FAQ: [`FAQ.md`](FAQ.md).
+
 1. Copy a worked example that matches your posture — [permissive](spec/examples/oss-ai-contribution-policy.ai-contribution-policy.yml) or [strict](spec/examples/illustrative-strict-project.ai-contribution-policy.yml) — to your repository root as `ai-contribution-policy.yml`.
 2. Edit four things: your project name, your per-asset **stance**, the **attestations** you require, and what happens on **non-disclosure**.
 3. Set `last_reviewed` to today and commit. Link it from CONTRIBUTING.md.
 
-That's the whole adoption cost. Your policy is now in one predictable place — for contributors, for CI, and for AI agents that read repository files before acting. If you adopt it, [tell us](../../issues) — early adopters shape schema v0.2.
+That's the whole adoption cost. Your policy is now in one predictable place — for contributors, for CI, and for AI agents that read repository files before acting. If you adopt it, [tell us](https://github.com/ecogetaway/oss-ai-contribution-policy/issues) — early adopters shape schema v0.2.
 
 ---
 
@@ -69,9 +79,9 @@ Draft schema: [`spec/ai-contribution-policy.schema.yml`](spec/ai-contribution-po
 A specification for how a good-faith contributor complies: disclose role, attest verification, provide evidence. Designed so that following it is *easier* than evading it, and so a first-time contributor can succeed without reading a debate thread.
 
 ### 3. The evidence base
-A catalogue mapping 60+ existing per-project policies ([`policy-catalogue/`](policy-catalogue/)) and 5–8 deep case studies of real collisions ([`case-studies/`](case-studies/)) — so the schema encodes what projects actually need, not what sounds plausible.
+A growing catalogue of existing per-project policies ([`policy-catalogue/`](policy-catalogue/)) and deep case studies of real collisions ([`case-studies/`](case-studies/)) — so the schema encodes what projects actually need, not what sounds plausible.
 
-First nine catalogued (every entry verified against its primary source on the capture date):
+**Today:** nine catalogued entries (every entry verified against its primary source on the capture date). Expanding the catalogue via good-first-issues is the fastest way to help.
 
 | Project | Stance | Distinctive feature |
 | --- | --- | --- |
@@ -123,7 +133,7 @@ The standard is built by and for maintainers, on three commitments:
 
 ## Roadmap
 
-**Phase 1 — Evidence (current).** Catalogue 60+ existing AI-contribution policies; write 5–8 anchor case studies (curl, Ghostty, tldraw, Jazzband among the candidates); publish the field report that makes the pattern undeniable.
+**Phase 1 — Evidence (current).** Grow the catalogue beyond the first nine verified entries; write additional anchor case studies (Ghostty, tldraw, Jazzband among the candidates); publish the field report that makes the pattern undeniable.
 
 **Phase 2 — Standard.** Schema v0.1 (drafted here) hardened against the catalogue: every field must earn its place by mapping to something real projects already do by hand. Contributor-pathway spec alongside it.
 
@@ -151,27 +161,26 @@ If you maintain a repository that receives AI-assisted contributions — welcome
 - **License:** Apache-2.0. The standard stays open and community-owned; that is a design constraint, not a preference.
 - **Decisions:** documented in public issues in this repository, with a comment period on schema changes. As the maintainer panel forms (compensated maintainer co-design is part of the funded roadmap), schema authority shifts to it.
 - **Long-term home:** this repository is the incubator, not the destination. Phase 4 proposes the standard into an established body (OpenSSF-shaped working group) once pilots produce evidence worth standardizing.
-- **Next concrete steps:** policy catalogue to 60+ entries; first two case studies drafted; schema v0.1 field-by-field review issue open for comment.
+- **Next concrete steps:** grow the catalogue beyond nine verified entries; more case studies; schema v0.1 field-by-field review open for comment. See [FAQ](FAQ.md) and [ADOPTION.md](ADOPTION.md).
 
 ## Anticipated Questions
 
+See the full [`FAQ.md`](FAQ.md). Short versions:
+
 **Isn't this just another opinion about AI and open source?**
-No — it's a catalogue first. Nine projects' policies verified against live primary sources, one deep case study, and a schema whose every field must map to something real projects already do by hand. Where the evidence is thin, the documents say so. Opinions are cheap in this debate; the [policy catalogue](policy-catalogue/) is the part you can check.
+No — it's a catalogue first. Nine projects' policies verified against live primary sources, one deep case study, and a schema whose every field must map to something real projects already do by hand. Where the evidence is thin, the documents say so.
 
 **Why not just detect AI-generated contributions?**
-Because detection is an arms race the detectors lose — accuracy degrades with every model generation, and false positives land hardest on non-native English writers and newcomers. Attestation of *human actions* (tests run, change understood, output reviewed) stays meaningful no matter how good generation gets. That single design decision is why this standard doesn't expire.
-
-**Does disclosure actually reduce the burden?**
-Honestly: measuring that is the point of the pilots. What the catalogue already shows is that the projects that kept their doors open (Ghostty, LLVM, curl, Godot) all converged independently on disclosure-plus-verification — and that curl's disclosure policy alone wasn't sufficient to save its bug bounty. We publish pilot results either way, negative findings included.
+Detection is an arms race the detectors lose. Attestation of *human actions* stays meaningful no matter how good generation gets.
 
 **What about projects that prohibit AI contributions entirely?**
-The standard is stance-neutral. `prohibited` is a first-class value, and a machine-readable "no" is more useful than a buried one — an AI coding agent that reads the file can decline to generate the PR at all. QEMU, servo, and Gentoo's positions are documented in the catalogue with the same care as the permissive ones.
+The draft is stance-neutral. `prohibited` is first-class — a machine-readable “no” is more useful than a buried one.
 
 **How would this ever be enforced?**
-Two layers, honestly labeled. Social: a self-certified pathway, like DCO — attestations create accountability, not proof. Technical: the file is CI-checkable and agent-readable, so undisclosed-AI handling (`request-disclosure`, `close`, `label-and-review`) is declared before the argument starts instead of invented per-PR. Enforcement that requires proving what wrote the code is exactly the arms race we refuse (see detection, above).
+Social attestation (DCO-like) plus declared handling for undisclosed AI — not proof of authorship. Details in the [FAQ](FAQ.md).
 
 **Who decides what goes in the standard?**
-For now: public issues in this repository, with a comment period on schema changes and a field-survival rule — a field no real policy expresses gets removed. The roadmap's endgame is handing the spec to an established standards home (OpenSSF-shaped working group) once pilots produce evidence worth standardizing. This repo is the incubator, not the throne.
+Public issues here for now; long-term home intended as an established body once pilots produce evidence. This repo is the incubator, not the throne.
 
 ## Related Work
 
