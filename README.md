@@ -8,6 +8,8 @@ This repository defines a **draft** machine-readable shape — **`ai-contributio
 
 _Status: early-stage — schema v0.1 drafted, **nine** verified catalogue entries, first case study complete. See [FAQ](FAQ.md)._
 
+_Built with AI-assisted drafting and research; every factual claim is independently verified against primary sources before publication._
+
 ### Try this first
 
 | Priority | Action |
