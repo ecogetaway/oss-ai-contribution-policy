@@ -83,7 +83,7 @@ A specification for how a good-faith contributor complies: disclose role, attest
 ### 3. The evidence base
 A growing catalogue of existing per-project policies ([`policy-catalogue/`](policy-catalogue/)) and deep case studies of real collisions ([`case-studies/`](case-studies/)) — so the schema encodes what projects actually need, not what sounds plausible.
 
-**Today:** nine catalogued entries (every entry verified against its primary source on the capture date). Expanding the catalogue via good-first-issues is the fastest way to help.
+**Today:** twelve catalogued entries (every entry verified against its primary source on the capture date). Expanding the catalogue via good-first-issues is the fastest way to help.
 
 | Project | Stance | Distinctive feature |
 | --- | --- | --- |
@@ -96,6 +96,9 @@ A growing catalogue of existing per-project policies ([`policy-catalogue/`](poli
 | [servo](policy-catalogue/servo.md) | prohibited | Four argued rationales; explicit revisit clause |
 | [Gentoo](policy-catalogue/gentoo.md) | prohibited | Council-voted 2024; packaging carve-out |
 | [tldraw](policy-catalogue/tldraw.md) | closed to external PRs | Total pathway closure, framed as temporary |
+| [Kubernetes](policy-catalogue/kubernetes.md) | disclosed-allowed | Explicitly bans `assisted-by`/co-author trailers — opposite of LLVM/Fedora |
+| [Rust (rust-lang/rust)](policy-catalogue/rust.md) | banned-by-default (proposed) | Quantitative "circuit breaker" throttle; not yet merged |
+| [Fedora](policy-catalogue/fedora.md) | disclosed-allowed | Encourages AI-assisted translation; bans AI from CoC/funding/leadership decisions |
 
 **Why verification, not detection:** every detection-based approach is an arms race the detectors lose. Attestation of human review, testing, and understanding stays meaningful no matter how good the models get. That single decision is what keeps this standard from being obsolete on arrival.
 
