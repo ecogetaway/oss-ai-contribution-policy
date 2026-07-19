@@ -2,7 +2,7 @@
 
 - **Project:** [ghostty-org/ghostty](https://github.com/ghostty-org/ghostty)
 - **Policy location:** [AI_POLICY.md](https://github.com/ghostty-org/ghostty/blob/main/AI_POLICY.md) (dedicated file), reinforced in [CONTRIBUTING.md](https://github.com/ghostty-org/ghostty/blob/main/CONTRIBUTING.md)
-- **Captured on:** 2026-07-11
+- **Captured on:** 2026-07-11; re-verified 2026-07-19
 
 ## Policy substance (mapped to schema fields)
 
@@ -18,6 +18,8 @@
 
 ## Verbatim excerpt
 > "All AI usage in any form must be disclosed. You must state the tool you used (e.g. Claude Code, Cursor, Amp) along with the extent that the work was AI-assisted. […] If you can't explain what your changes do and how they interact with the greater system without the aid of AI tools, do not contribute to this project."
+>
+> "**Our reason for the strict AI policy is not due to an anti-AI stance**, but instead due to the number of highly unqualified people using AI. It's the people, not the tools, that are the problem." — AI_POLICY.md, § "AI is Welcome Here"
 
 ## Notes
 Richest policy in the batch. Three things the v0.1 schema cannot express: (1) a **trust-bootstrapping mechanism** (the vouch system) as a first-contributor gate; (2) a **cross-project shareable blocklist** as an enforcement outcome; (3) maintainers explicitly **exempted** from the policy. The policy is explicitly pro-AI in rationale ("Our reason … is not due to an anti-AI stance") — stance labels need to capture that a strict policy and a welcoming posture can coexist.

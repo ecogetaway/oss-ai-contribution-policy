@@ -6,7 +6,7 @@ This repository defines a **draft** machine-readable shape — **`ai-contributio
 
 **Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Aniruddh Raghavendra). Full portfolio under [Companion Projects](#companion-projects).
 
-_Status: early-stage — schema v0.1 drafted, **nine** verified catalogue entries, first case study complete. See [FAQ](FAQ.md)._
+_Status: early-stage — schema v0.1 drafted, **twelve** verified catalogue entries (eleven adopted policies + one public proposal), first case study complete. See [FAQ](FAQ.md)._
 
 _Built with AI-assisted drafting and research; every factual claim is independently verified against primary sources before publication._
 
@@ -15,7 +15,7 @@ _Built with AI-assisted drafting and research; every factual claim is independen
 | Priority | Action |
 | --- | --- |
 | **1. Primary** | [Copy a YAML example](spec/examples/) into your repo root as `ai-contribution-policy.yml` — walkthrough in [ADOPTION.md](ADOPTION.md) |
-| **2. Secondary** | Read the [policy catalogue](policy-catalogue/) (nine verified entries) before debating theory |
+| **2. Secondary** | Read the [policy catalogue](policy-catalogue/) (twelve verified entries) before debating theory |
 | **3. Then** | [Add a catalogue entry](policy-catalogue/TEMPLATE.md) (~15 min) or open `schema-feedback` / `pilot` issues |
 
 Please do **not** ask people to star the repo. The useful signal is a copied YAML, a catalogue PR, or a schema critique.
