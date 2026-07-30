@@ -6,7 +6,7 @@ Each entry is one file per project, from [`TEMPLATE.md`](TEMPLATE.md). Adding an
 
 Why this matters: schema v0.2 keeps only the fields this catalogue proves projects actually need. A field that no real policy expresses is a field we remove. The catalogue is also the honest record of how fragmented the current landscape is — dozens of incompatible, hand-rolled defenses is the problem statement, in data.
 
-## Current entries (12 of 60+)
+## Current entries (13 of 60+)
 
 | Project | Stance (code) | Distinctive feature |
 | --- | --- | --- |
@@ -22,7 +22,8 @@ Why this matters: schema v0.2 keeps only the fields this catalogue proves projec
 | [Gentoo](gentoo.md) | prohibited | Council-voted (2024-04-14); carve-out for packaging AI software |
 | [tldraw](tldraw.md) | closed to external PRs | Total pathway closure, AI-pressure-driven, framed as temporary |
 | [Rust](rust.md) | **proposed** — ban on creation | Policy-in-formation (rust-forge PR #1040, open since 2026-04-17); repo-scoped; first quantitative circuit-breaker enforcement rule in the catalogue |
+| [llama.cpp](llama-cpp.md) | disclosed-allowed | First loosening in the catalogue (ban → allow, 2026-07-22, rationale: model quality); prohibits AI for PR descriptions, commit messages and all reviewer/issue communication; instructs autonomous agents to remove the project from their own target list |
 
-Eleven adopted policies plus one proposal under public discussion. Counts elsewhere in this repository refer to adopted policies unless stated.
+Twelve adopted policies plus one proposal under public discussion. Counts elsewhere in this repository refer to adopted policies unless stated.
 
 Every entry verified against the linked primary source on its capture date.
