@@ -6,7 +6,7 @@ This repository defines a **draft** machine-readable shape — **`ai-contributio
 
 **Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Aniruddh Raghavendra). Full portfolio under [Companion Projects](#companion-projects).
 
-_Status: early-stage — schema v0.1 drafted, **twelve** verified catalogue entries (eleven adopted policies + one public proposal), first case study complete. See [FAQ](FAQ.md)._
+_Status: early-stage — schema v0.1 drafted, **21** verified catalogue entries, first case study complete. See [FAQ](FAQ.md)._
 
 _Built with AI-assisted drafting and research; every factual claim is independently verified against primary sources before publication._
 
@@ -15,7 +15,7 @@ _Built with AI-assisted drafting and research; every factual claim is independen
 | Priority | Action |
 | --- | --- |
 | **1. Primary** | [Copy a YAML example](spec/examples/) into your repo root as `ai-contribution-policy.yml` — walkthrough in [ADOPTION.md](ADOPTION.md) |
-| **2. Secondary** | Read the [policy catalogue](policy-catalogue/) (twelve verified entries) before debating theory |
+| **2. Secondary** | Read the [policy catalogue](policy-catalogue/) (21 verified entries) before debating theory |
 | **3. Then** | [Add a catalogue entry](policy-catalogue/TEMPLATE.md) (~15 min) or open `schema-feedback` / `pilot` issues |
 
 Please do **not** ask people to star the repo. The useful signal is a copied YAML, a catalogue PR, or a schema critique.
@@ -83,7 +83,7 @@ A specification for how a good-faith contributor complies: disclose role, attest
 ### 3. The evidence base
 A growing catalogue of existing per-project policies ([`policy-catalogue/`](policy-catalogue/)) and deep case studies of real collisions ([`case-studies/`](case-studies/)) — so the schema encodes what projects actually need, not what sounds plausible.
 
-**Today:** twelve catalogued entries (every entry verified against its primary source on the capture date). Expanding the catalogue via good-first-issues is the fastest way to help.
+**Today:** 21 catalogued entries (every entry verified against its primary source on the capture date). Expanding the catalogue via good-first-issues is the fastest way to help.
 
 | Project | Stance | Distinctive feature |
 | --- | --- | --- |
@@ -97,7 +97,7 @@ A growing catalogue of existing per-project policies ([`policy-catalogue/`](poli
 | [Gentoo](policy-catalogue/gentoo.md) | prohibited | Council-voted 2024; packaging carve-out |
 | [tldraw](policy-catalogue/tldraw.md) | closed to external PRs | Total pathway closure, framed as temporary |
 | [Kubernetes](policy-catalogue/kubernetes.md) | disclosed-allowed | Explicitly bans `assisted-by`/co-author trailers — opposite of LLVM/Fedora |
-| [Rust (rust-lang/rust)](policy-catalogue/rust.md) | banned-by-default (proposed) | Quantitative "circuit breaker" throttle; not yet merged |
+| [Rust (rust-lang/rust)](policy-catalogue/rust.md) | banned-by-default (adopted 2026-08-05; that repo only) | Circuit-breaker throttle; "analyze, not create"; `ai-assisted` label |
 | [Fedora](policy-catalogue/fedora.md) | disclosed-allowed | Encourages AI-assisted translation; bans AI from CoC/funding/leadership decisions |
 
 **Why verification, not detection:** every detection-based approach is an arms race the detectors lose. Attestation of human review, testing, and understanding stays meaningful no matter how good the models get. That single decision is what keeps this standard from being obsolete on arrival.

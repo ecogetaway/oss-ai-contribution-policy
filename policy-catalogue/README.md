@@ -6,7 +6,7 @@ Each entry is one file per project, from [`TEMPLATE.md`](TEMPLATE.md). Adding an
 
 Why this matters: schema v0.2 keeps only the fields this catalogue proves projects actually need. A field that no real policy expresses is a field we remove. The catalogue is also the honest record of how fragmented the current landscape is — dozens of incompatible, hand-rolled defenses is the problem statement, in data.
 
-## Current entries (20 of 60+)
+## Current entries (21 of 60+)
 
 | Project | Stance (code) | Distinctive feature |
 | --- | --- | --- |
