@@ -1,18 +1,18 @@
 # rust-lang/rust — AI-contribution policy (catalogue entry)
 
 - **Project:** [rust-lang/rust](https://github.com/rust-lang/rust)
-- **Policy location:** [rust-lang/rust-forge PR #1040 — "Add an LLM policy for `rust-lang/rust`"](https://github.com/rust-lang/rust-forge/pull/1040) (proposed `src/policies/llm-usage.md`)
-- **Captured on:** 2026-07-16
+- **Policy location:** [LLM usage policy — Rust Forge](https://forge.rust-lang.org/policies/llm-usage.html) (canonical). Adoption note: [Inside Rust, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/) by Jynn Nelson. Originating PR: [rust-lang/rust-forge #1040](https://github.com/rust-lang/rust-forge/pull/1040) (merged 2026-08-05).
+- **Captured on:** 2026-08-13 (status updated from 2026-07-16 “proposed” capture)
 
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |
 | --- | --- |
-| status | **Proposed, not yet merged.** PR #1040 opened 2026-04-17, still open and under active discussion as of 2026-07-13. Catalogued as a signal of a policy in formation, not an adopted one. |
+| status | **Adopted 2026-08-05** for `rust-lang/rust` only, by five teams (compiler, libs, types, rustdoc, bootstrap, and their subteams). Not a project-wide Rust stance. Other `rust-lang` repos remain out of scope. |
 | stance (code) | banned by default — "It's fine to use LLMs to answer questions, analyze, distill, refine, check, suggest, review. But not to **create**" |
 | stance (docs / comments) | banned — "Documentation that is originally created by an LLM," including non-trivial source comments, doc-comments, safety comments, and compiler diagnostic messages |
-| stance (experimental code) | conditionally allowed under a carve-out for PRs clearly marked experimental (`S-experimental` label, `[PERF]` title, `r? ghost`) — disclosure "strongly recommended, not required" while marked experimental, **required** once the experimental marker is removed |
-| disclosure required? mechanism? | Required for everything in the "⚠️ Allowed with caveats" tier (trivial changes, machine translation, LLM review bots) — no fixed trailer format specified, unlike Fedora's `Assisted-by:` convention |
+| stance (experimental / LLM-created code) | Conditionally allowed under the adopted **experiment**: pre-arranged reviewer, tests required, `ai-assisted` label, private Zulip channel for those PRs. New contributors must talk to a reviewer before opening an LLM-created PR. |
+| disclosure required? mechanism? | Required for the “⚠️ Allowed with caveats” tier and for LLM-created PRs (`ai-assisted` label). No `Assisted-by:` trailer — different from Fedora/LLVM and opposite of Kubernetes’ trailer ban. |
 | attestations required | Self-review required regardless of AI use: "An LLM review does not substitute for self-review. Authors are expected to review their own code before posting and after each change." |
 | enforcement on non-disclosure | Framed explicitly as a Code-of-Conduct matter ("🔨 Violating this clause counts as a violation of the Code of Conduct") for the "Lying" category, rather than automated PR closure |
 | aggregate/systemic control | Novel mechanism not seen elsewhere in this catalogue: a **circuit breaker** — if more than 50% of merged PRs in a rolling 6-week window are LLM-created, new LLM-created PRs face a moratorium with a minimum 10-day cooldown |
@@ -26,4 +26,4 @@
 > "It's fine to use LLMs to answer questions, analyze, distill, refine, check, suggest, review. But not to **create**."
 
 ## Notes
-Two things make this entry distinct from the rest of the catalogue. First, it's **explicitly scoped to one repository** (`rust-lang/rust` only — "excludes subtrees, submodules, and dependencies"), not the whole Rust project, which the schema's project-level granularity doesn't currently represent. Second, the **circuit-breaker mechanism** is the first quantitative, self-adjusting enforcement rule seen in this catalogue (vs. binary allowed/banned stances elsewhere) — strong v0.2 signal that "enforcement" needs a sub-field for threshold-based/dynamic rules, not just static prohibitions. The policy's own stated goal — "remove plausible deniability" rather than "catch every violation" — is also a notably different enforcement philosophy from Kubernetes' closure-on-detection approach, worth surfacing in any cross-project synthesis this catalogue eventually produces.
+Verified adopted on 2026-08-13 against the Forge page and Jynn Nelson’s Inside Rust post. Two things still make this entry distinct. First, it is **explicitly scoped to one repository** (`rust-lang/rust` only — subtrees, submodules, crates.io dependencies, and other `rust-lang` repos are out of scope), which the schema’s project-level granularity does not currently represent. Second, the **circuit-breaker** survived merge: if more than half of PRs merged in a rolling 6-week window are LLM-created, new LLM-created PRs face a moratorium with a minimum 10-day cooldown — the first quantitative, self-adjusting enforcement rule in this catalogue. The adopted experiment also requires a pre-arranged reviewer and an `ai-assisted` label, which is a different disclosure shape from Fedora/LLVM `Assisted-by:` trailers and from Kubernetes’ trailer *ban*. The policy’s stated goal — “remove plausible deniability” rather than “catch every violation” — remains a different enforcement philosophy from Kubernetes’ closure-on-detection approach. Do not mail llvm-dev-style blasts; if contacting, use Jynn Nelson (`@jyn514`) about this file only.
