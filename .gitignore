@@ -1,0 +1,19 @@
+# --- working documents: never publish (managed) ---
+# Engagement/outreach plans, funding proposals, cover notes and unpublished
+# article drafts stay on disk but must never reach this public repo.
+# If one ever truly belongs here: git add -f <path>
+.DS_Store
+~$*
+*.docx
+*.doc
+*.xlsx
+**/outreach/
+*ngagement-Plan*
+*ngagement-plan*
+/A11y/
+
+# Unpublished article drafts and research dossiers live under docs/.
+# Nothing on the published repo links into it. Extension rules alone are not
+# enough: the LWN research dossiers are .md, so *.docx would not catch them,
+# and the stealth rule applies to drafts in any format until an outlet accepts.
+/docs/
