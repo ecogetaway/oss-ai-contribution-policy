@@ -1,0 +1,123 @@
+# Sources behind policy-catalogue/, checked weekly by
+# .github/workflows/source-freshness.yml (Mondays 03:30 UTC = 09:00 IST).
+#
+# For each source the check reports:
+#   - commits to a watched file after `verified` (GitHub / GitLab files),
+#   - wiki edits after `verified` (MediaWiki pages),
+#   - any `anchors` phrase that is no longer on the page (catches rewrites and moves).
+#
+# After reviewing a reported change: update the catalogue entry (and the comparison
+# page on the initiative site), then set `verified` to the review date and adjust
+# `anchors` if the wording changed. `manual` sources cannot be fetched by CI (bot
+# challenge) and are listed for a hand check on the first run of each month.
+
+sources:
+  - id: aethersdr
+    verified: 2026-09-25
+    github: [{repo: aethersdr/AetherSDR, path: CONTRIBUTING.md}]
+    anchors: [{url: "https://raw.githubusercontent.com/aethersdr/AetherSDR/main/CONTRIBUTING.md", text: "Claude Code"}]
+
+  - id: asahi-linux
+    verified: 2026-09-25
+    anchors: [{url: "https://asahilinux.org/llm-policy/", text: "we broadly forbid the use of generative AI tooling for material contributions"}]
+
+  - id: bevy
+    verified: 2026-09-25
+    github: [{repo: bevyengine/bevy-website, path: content/learn/contribute/policies/ai.md}]
+    anchors:
+      - {url: "https://raw.githubusercontent.com/bevyengine/bevy-website/main/content/learn/contribute/policies/ai.md", text: "tolerate careful human-driven AI use in some code-related areas"}
+      - {url: "https://raw.githubusercontent.com/bevyengine/bevy-website/main/content/learn/contribute/policies/ai.md", text: "Any use of AI to contribute to Bevy must be disclosed"}
+
+  - id: curl
+    verified: 2026-09-25
+    github: [{repo: curl/curl, path: docs/CONTRIBUTE.md}]
+    anchors: [{url: "https://raw.githubusercontent.com/curl/curl/master/docs/CONTRIBUTE.md", text: "We can accept code written with the help of AI"}]
+
+  - id: fedora
+    verified: 2026-09-25
+    manual: "https://docs.fedoraproject.org/en-US/council/policy/ai-contribution-policy/ (Version 1.0, last review 2025-10-24 when checked). Behind a bot challenge; open it in a browser and compare the version and last-review date."
+
+  - id: freebsd
+    verified: 2026-09-25
+    github: [{repo: freebsd/freebsd-src, path: CONTRIBUTING.md}]
+
+  - id: gentoo
+    verified: 2026-09-25
+    mediawiki: {api: "https://wiki.gentoo.org/api.php", title: "Project:Council/AI_policy"}
+
+  - id: ghostty
+    verified: 2026-09-25
+    github:
+      - {repo: ghostty-org/ghostty, path: AI_POLICY.md}
+      - {repo: ghostty-org/ghostty, path: CONTRIBUTING.md}
+    anchors: [{url: "https://raw.githubusercontent.com/ghostty-org/ghostty/main/AI_POLICY.md", text: "All AI usage in any form must be disclosed"}]
+
+  - id: godot
+    verified: 2026-09-25
+    github: [{repo: godotengine/godot, path: CONTRIBUTING.md}]
+
+  - id: home-assistant
+    verified: 2026-09-25
+    github: [{repo: home-assistant/core, path: AI_POLICY.md}]
+    anchors:
+      - {url: "https://raw.githubusercontent.com/home-assistant/core/dev/AI_POLICY.md", text: "Including your original text in a details block"}
+      - {url: "https://raw.githubusercontent.com/home-assistant/core/dev/AI_POLICY.md", text: "We do not allow autonomous agents to be used for contributing to our projects"}
+
+  - id: kubernetes
+    verified: 2026-09-25
+    anchors: [{url: "https://www.kubernetes.dev/docs/guide/pull-requests/", text: "Using AI tools to help write your PR is acceptable"}]
+
+  - id: llama-cpp
+    verified: 2026-09-25
+    github:
+      - {repo: ggml-org/llama.cpp, path: AGENTS.md}
+      - {repo: ggml-org/llama.cpp, path: CONTRIBUTING.md}
+      - {repo: ggml-org/llama.cpp, path: .github/pull_request_template.md}
+    anchors: [{url: "https://raw.githubusercontent.com/ggml-org/llama.cpp/master/.github/pull_request_template.md", text: "AI usage disclosure"}]
+
+  - id: llvm
+    verified: 2026-09-25
+    github: [{repo: llvm/llvm-project, path: llvm/docs/AIToolPolicy.md}]
+    anchors: [{url: "https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/docs/AIToolPolicy.md", text: "Assisted-by"}]
+
+  - id: mesa
+    verified: 2026-09-25
+    gitlab: [{host: gitlab.freedesktop.org, project: mesa/mesa, path: docs/submittingpatches.rst}]
+    anchors:
+      - {url: "https://gitlab.freedesktop.org/mesa/mesa/-/raw/main/docs/submittingpatches.rst", text: "Generated-by"}
+      - {url: "https://gitlab.freedesktop.org/mesa/mesa/-/raw/main/docs/submittingpatches.rst", text: "shouldn't be used to generate code comments"}
+
+  - id: netbsd
+    verified: 2026-09-25
+    anchors: [{url: "https://www.netbsd.org/developers/commit-guidelines.html", text: "presumed to be tainted code"}]
+
+  - id: openstreetmap
+    verified: 2026-09-25
+    github: [{repo: openstreetmap/openstreetmap-website, path: CONTRIBUTING.md}]
+    anchors: [{url: "https://raw.githubusercontent.com/openstreetmap/openstreetmap-website/master/CONTRIBUTING.md", text: "AI-Assisted Contributions"}]
+
+  - id: qemu
+    verified: 2026-09-25
+    gitlab: [{host: gitlab.com, project: qemu-project/qemu, path: docs/devel/code-provenance.rst}]
+
+  - id: rust
+    verified: 2026-09-25
+    github: [{repo: rust-lang/rust-forge, path: src/policies/llm-usage.md}]
+    anchors:
+      - {url: "https://raw.githubusercontent.com/rust-lang/rust-forge/master/src/policies/llm-usage.md", text: "But not to **create**"}
+      - {url: "https://raw.githubusercontent.com/rust-lang/rust-forge/master/src/policies/llm-usage.md", text: "llm-assisted"}
+      - {url: "https://raw.githubusercontent.com/rust-lang/rust-forge/master/src/policies/llm-usage.md", text: "Posting both your original message and the translated version is always ok"}
+
+  - id: servo
+    verified: 2026-09-25
+    github: [{repo: servo/book, path: src/contributing/getting-started.md}]
+    anchors: [{url: "https://raw.githubusercontent.com/servo/book/main/src/contributing/getting-started.md", text: "probabilistic tools"}]
+
+  - id: tldraw
+    verified: 2026-09-25
+    github: [{repo: tldraw/tldraw, path: CONTRIBUTING.md}]
+
+  - id: zig
+    verified: 2026-09-25
+    github: [{repo: ziglang/www.ziglang.org, path: content/en-US/code-of-conduct.smd}]
+    anchors: [{url: "https://ziglang.org/code-of-conduct/", text: "No LLMs for translation"}]

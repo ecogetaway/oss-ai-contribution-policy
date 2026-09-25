@@ -36,3 +36,5 @@ Why this matters: schema v0.2 keeps only the fields this catalogue proves projec
 All 21 entries record adopted policies (Rust's was a proposal when first captured and was adopted on 2026-08-05). All sources were checked for changes on 2026-09-25; Asahi Linux, Bevy, Mesa and Rust had changed, and their entries carry a dated update note. Fedora's entry was captured from the proposal; its update note records how the adopted text differs.
 
 Every entry verified against the linked primary source on its capture date.
+
+**Kept current automatically.** A weekly check ([`freshness/`](../freshness/), run by `.github/workflows/source-freshness.yml`) looks for new commits or wiki edits to every source above, and for key sentences that have disappeared. When something changes it opens a `source-changed` issue for review. A policy that changes is updated here with a dated note, never silently.
