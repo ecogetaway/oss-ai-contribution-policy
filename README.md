@@ -6,6 +6,8 @@ This repository defines a **draft** machine-readable shape — **`ai-contributio
 
 **Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Aniruddh Raghavendra). Full portfolio under [Companion Projects](#companion-projects).
 
+**Overview and related work:** the [AI contribution policy workstream page](https://oss-infrastructure-initiative.netlify.app/ai-contribution-policy) on the OSS Infrastructure Initiative site, alongside the [other workstreams](https://oss-infrastructure-initiative.netlify.app/).
+
 _Status: early-stage — schema v0.1 drafted, **21** verified catalogue entries, first case study complete. See [FAQ](FAQ.md)._
 
 _Built with AI-assisted drafting and research; every factual claim is independently verified against primary sources before publication._
