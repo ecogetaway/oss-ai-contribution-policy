@@ -4,6 +4,8 @@
 - **Policy location:** [ziglang.org/code-of-conduct](https://ziglang.org/code-of-conduct/) § "Strict No LLM / No AI Policy". Surfaced in-repo through the issue-template chooser at [`.forgejo/ISSUE_TEMPLATE/config.yml`](https://github.com/ziglang/zig/blob/738d2be9d6b6ef3ff3559130c05159ef53336224/.forgejo/ISSUE_TEMPLATE/config.yml), which links to it under the heading "Copilot and Other LLMs". The former wiki page now redirects to the Code of Conduct.
 - **Captured on:** 2026-07-25 (repo link pinned to `738d2be`; the Code of Conduct is a website page with no commit pin available)
 
+> **Update, 2026-09-25.** The note below says four other policies permit or encourage LLM translation, citing Fedora as encouraging it. Fedora's **adopted** policy does not contain that encouragement (see the update in [fedora.md](fedora.md)); it appeared only in the proposal. Against adopted texts, the contrast is with **three** policies: Bevy, Home Assistant and Rust. Zig's own policy text was re-verified unchanged on 2026-09-25.
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |
