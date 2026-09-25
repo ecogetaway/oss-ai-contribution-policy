@@ -4,6 +4,8 @@
 - **Policy location:** [LLM usage policy — Rust Forge](https://forge.rust-lang.org/policies/llm-usage.html) (canonical). Adoption note: [Inside Rust, 2026-08-05](https://blog.rust-lang.org/inside-rust/2026/08/05/rust-langrust-is-adopting-an-llm-policy/) by Jynn Nelson. Originating PR: [rust-lang/rust-forge #1040](https://github.com/rust-lang/rust-forge/pull/1040) (merged 2026-08-05).
 - **Captured on:** 2026-08-13 (status updated from 2026-07-16 “proposed” capture)
 
+> **Update, 2026-09-25 (re-verified at source).** The policy now applies to **six repositories**: rust-lang/rust, rustlings, mdBook, cargo, rust-clippy and rustfmt, still "only to the teams that have ratified it". LLM-created PRs under the experimental tier are tagged with an **`llm-assisted`** label (verbatim: "LLM-created PRs must be tagged with a new `llm-assisted` label"). The core rule is unchanged: "It's fine to use LLMs to answer questions, analyze, distill, refine, check, suggest, review. But not to **create**." On machine translation (verbatim): "Posting both your original message and the translated version is always ok, but you must still disclose that machine-translation was used."
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |
