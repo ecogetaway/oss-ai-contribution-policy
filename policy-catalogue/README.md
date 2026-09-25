@@ -17,7 +17,7 @@ Why this matters: schema v0.2 keeps only the fields this catalogue proves projec
 | [curl](curl.md) | disclosed-allowed | Separate, stricter rules for security reports; bug bounty ended Jan 2026 |
 | [Godot](godot.md) | disclosed-allowed (agents) | Policy addressed to the AI agent itself, with prescribed disclosure format |
 | [Kubernetes](kubernetes.md) | disclosed-allowed (per-asset split) | AI-assisted PRs allowed, AI-generated commit messages banned; explicitly bans the commit-trailer disclosure pattern Fedora recommends |
-| [Fedora](fedora.md) | disclosed-allowed | Most translation-friendly policy catalogued — AI assistance explicitly encouraged for translation; restricts AI from governance decision-making (Council-approved 2025-10-22) |
+| [Fedora](fedora.md) | disclosed-allowed | Restricts AI from governance decision-making (Council-approved 2025-10-22). *Corrected 2026-09-25:* the translation encouragement was in the proposal only; the adopted policy (v1.0) exempts grammar and clarity help from disclosure |
 | [NetBSD](netbsd.md) | prohibited-unless-escalated | LLM output "presumed tainted"; exception via written core approval |
 | [QEMU](qemu.md) | prohibited | Ban derived from DCO/copyright provenance, not quality |
 | [servo](servo.md) | prohibited | Four argued rationales; covers issues and comments; explicit revisit clause |
@@ -30,9 +30,9 @@ Why this matters: schema v0.2 keeps only the fields this catalogue proves projec
 | [OpenStreetMap](openstreetmap.md) | disclosed-allowed in effect, disclosure never requested | The only permissive policy that asks for no disclosure at all: it enforces on the **absence of understanding** rather than the presence of AI — verification-over-detection, arrived at independently |
 | [FreeBSD](freebsd.md) | restricted by channel rather than banned | Only policy protecting the project **as training data** ("or use pull request interactions to train AI or LLM systems"); its AI clause is a routing rule — wrong channel — rather than a stance |
 | [Bevy](bevy.md) | **revised 2026-08-11:** disclosed-allowed (restricted) — no AI media, prose, communication or commit authorship; entry below predates the revision | Only policy that reasons about its own enforceability, exempting trivial LLM completions because they are "by definition not detectable"; retroactive removal as a sanction; ships its own detection heuristics |
-| [Zig](zig.md) | prohibited, including paraphrase | Strictest in the catalogue and the only one reaching upstream of the artifact — bans LLM brainstorming and discussion of LLM services; bans LLM **translation** where four other policies permit or encourage it |
+| [Zig](zig.md) | prohibited, including paraphrase | Strictest in the catalogue and the only one reaching upstream of the artifact — bans LLM brainstorming and discussion of LLM services; bans LLM **translation** where three other adopted policies (Bevy, Home Assistant, Rust) permit it (corrected 2026-09-25) |
 | [Asahi Linux](asahi-linux.md) | prohibited (policy rewritten and moved to asahilinux.org/llm-policy; re-verified 2026-09-25) | The only stance **derived from a pre-existing rule** rather than written fresh: its existing ban on leaked Apple material is extended to model output; one warning then permanent ban; first to cite environmental cost |
 
-All 21 entries record adopted policies (Rust's was a proposal when first captured and was adopted on 2026-08-05). All sources were checked for changes on 2026-09-25; Asahi Linux, Bevy, Mesa and Rust had changed, and their entries carry a dated update note.
+All 21 entries record adopted policies (Rust's was a proposal when first captured and was adopted on 2026-08-05). All sources were checked for changes on 2026-09-25; Asahi Linux, Bevy, Mesa and Rust had changed, and their entries carry a dated update note. Fedora's entry was captured from the proposal; its update note records how the adopted text differs.
 
 Every entry verified against the linked primary source on its capture date.

@@ -4,6 +4,8 @@
 - **Policy location:** [Gentoo Council AI policy](https://wiki.gentoo.org/wiki/Project:Council/AI_policy) — Council vote, 2024-04-14
 - **Captured on:** 2026-07-11
 
+> **Update, 2026-09-25.** A 2026-08-10 wiki edit ("Fix grammatical errors") changed the revisit clause quoted below from "should a case been made over such a tool" to "should a case be made for such a tool". The meaning is unchanged; the quotes below keep the wording as captured.
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |
