@@ -4,6 +4,8 @@
 - **Policy location:** [bevy.org/learn/contribute/policies/ai](https://bevy.org/learn/contribute/policies/ai/); source at [bevy-website `content/learn/contribute/policies/ai.md`](https://github.com/bevyengine/bevy-website/blob/cd91a9582dd368a7712b66f86e8669722315c13a/content/learn/contribute/policies/ai.md), added in [bevy-website#2204](https://github.com/bevyengine/bevy-website/pull/2204) (2025-10-14); linked from [bevy CONTRIBUTING.md](https://github.com/bevyengine/bevy/blob/main/CONTRIBUTING.md)
 - **Captured on:** 2026-07-25 (source pinned to `cd91a95`)
 
+> **Update, 2026-09-25 (re-verified at source).** Bevy revised its AI policy on 2026-08-11 ([bevy-website #2551](https://github.com/bevyengine/bevy-website/pull/2551)). **This entry describes the earlier policy captured on 2026-07-25; the ban it records no longer applies.** The current policy says Bevy is "wary of the use of AI" but will "tolerate careful human-driven AI use in some code-related areas". It keeps these norms (verbatim): "**No AI-generated media.**" · "**No AI-generated prose.** AI must not be used to write public-facing prose, including documentation, issues, PR descriptions, or release notes." · "**No AI-generated communication.** … AI may be used to assist for translation and accessibility purposes, but please include the [original untranslated text] as well." · "**No AI-authored commits.**" · "**Disclosure.** Any use of AI to contribute to Bevy must be disclosed, with context about how it was used." Current stance code: disclosed-allowed (restricted). A full re-capture is pending.
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |

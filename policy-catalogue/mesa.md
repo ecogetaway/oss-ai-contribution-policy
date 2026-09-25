@@ -4,6 +4,8 @@
 - **Policy location:** [`docs/submittingpatches.rst` § "Expectations on contributors"](https://gitlab.freedesktop.org/mesa/mesa/-/blob/7a6f5690575edc7113ff0da4281d8a646114be28/docs/submittingpatches.rst)
 - **Captured on:** 2026-07-25 (pinned to `7a6f569`)
 
+> **Update, 2026-09-25 (re-verified at source).** On 2026-09-02 Mesa added to `docs/submittingpatches.rst` (verbatim): "\"AI\" shouldn't be used to generate code comments, commit messages, and Gitlab comments. Every contributor should communicate with the community directly without other people or tools in the middle." and "contributors can use \"AI\" for research etc., but all text should be their own words." The rest of this entry is unchanged.
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |

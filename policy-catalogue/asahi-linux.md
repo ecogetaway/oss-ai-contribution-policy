@@ -4,6 +4,8 @@
 - **Policy location:** [`docs/project/policies/slop.md` — "Generative AI Policy"](https://github.com/AsahiLinux/docs/blob/09810cd311da3d354685d3673ced269a21bad05f/docs/project/policies/slop.md), added 2025-07-19 in commit [`7c295db`](https://github.com/AsahiLinux/docs/commit/7c295dbb8af7)
 - **Captured on:** 2026-07-25 (pinned to `09810cd`)
 
+> **Update, 2026-09-25 (re-verified at source).** The policy has moved and been rewritten. The pinned `docs/project/policies/slop.md` was removed from AsahiLinux/docs on 2026-08-30; the old URL now points to [asahilinux.org/llm-policy](https://asahilinux.org/llm-policy/). **The stance is still prohibitive, but the wording and rationale this entry quotes have changed.** Current text (verbatim): "we broadly forbid the use of generative AI tooling for material contributions to Asahi Linux." Grounds now given: software freedom, community, environment, privacy and consent, and that "LLMs pose unique legal risks to reverse engineering projects, as these systems are likely to violate the clean room requirements and taint the resulting code." Enforcement is graduated: "A GitHub issue drafted by an LLM may simply be closed … may be issued with a first and final warning. A contributor found to have concealed extensive LLM use will be banned immediately." A full re-capture is pending.
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |
