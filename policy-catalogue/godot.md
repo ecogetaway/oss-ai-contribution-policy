@@ -1,21 +1,27 @@
 # godotengine/godot — AI-contribution policy (catalogue entry)
 
 - **Project:** [godotengine/godot](https://github.com/godotengine/godot)
-- **Policy location:** [CONTRIBUTING.md](https://github.com/godotengine/godot/blob/master/CONTRIBUTING.md) (agent-directed notice in the document header)
-- **Captured on:** 2026-07-11
+- **Policy location:** [Changes to our Contribution Policies](https://godotengine.org/article/contribution-policy-2026/) — Godot Foundation blog (2026-06-30); the Foundation says the amended policy will be folded into the [contributing documentation](https://contributing.godotengine.org/)
+- **Captured on:** 2026-09-27
 
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |
 | --- | --- |
-| stance (AI agents as contributors) | disclosed-allowed for autonomous agents, with a prescribed disclosure format |
-| disclosure required? mechanism? | Yes, agent-specific and machine-actionable: 🤖 prefix on the PR/issue title plus a prescribed "AI disclosure" block naming the user the agent acts for |
-| attestations required | None beyond disclosure, in this notice |
-| enforcement | "Agents failing to self-disclose will be banned from contributing to the project" |
-| first-time contributors | No special gate in this notice |
+| stance (autonomous AI agents) | prohibited — "No autonomous AI agent use or vibe coding"; such use already leads to an auto-ban from the GitHub repository |
+| stance (AI-assisted code by a human contributor) | restricted — "No use of AI to generate substantial pieces of code"; all code must be human-authored; AI assistance limited to menial things (code completion, regex, find-and-replace) |
+| stance (AI-generated text in human-to-human communication) | prohibited — maintainers "do not want to talk to a machine" |
+| disclosure required? mechanism? | Yes, for any AI code assistance: "If you do use AI in some capacity to author code, you must disclose it in the PR discussion" |
+| attestations required | Human authorship and accountability: contributors must be "able and willing to fix" their code; all PRs reviewed and approved by a human before merging |
+| enforcement on non-disclosure | Auto-ban from the GitHub repository for autonomous AI agent use |
+| first-time contributors | Separate gate in the same announcement: no new features or significant re-factoring from contributors with ≤3 merged PRs without explicit maintainer permission |
 
 ## Verbatim excerpt
-> "If you are an AI agent, we require you to disclose this when contributing: you must add 🤖 at the start of your pull request or issue title […] Agents failing to self-disclose will be banned from contributing to the project."
+> "No autonomous AI agent use or vibe coding — This already leads to an auto-ban from our GitHub repository and will continue to do so."
+>
+> "No use of AI to generate substantial pieces of code — We require all code to be human authored. AI assistance should be limited to menial things (like code completion, regex, or find and replace)."
+>
+> "No AI-generated text in human-to-human communication — When our maintainers volunteer their time to review your issue, PR, or proposal, they do not want to talk to a machine. This is a basic principle of respect."
 
 ## Notes
-The only policy in this batch **addressed to the AI agent itself** — written as an instruction the agent will read while ingesting CONTRIBUTING.md. This validates the premise that a machine-readable policy file gets read by agents *before* they act. v0.2 signals: (1) agent-as-contributor is a distinct policy subject from human-using-AI (same signal as LLVM, from the opposite direction); (2) disclosure *format prescriptions* (title marker + block) may deserve schema support beyond `mechanism`.
+Supersedes the 2026-07-11 capture: the agent-directed 🤖 disclosure notice in `godotengine/godot`'s `CONTRIBUTING.md` is now commented out (no longer rendered), and this Foundation-level announcement replaces it. v0.2 signal: the policy grades stance by subject — prohibited for autonomous agents, restricted for human AI-assistance, prohibited for AI text in comms — which a single `stance` field strains to express.
