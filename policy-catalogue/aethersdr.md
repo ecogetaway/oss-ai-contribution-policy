@@ -5,6 +5,9 @@
 - **Agent guidance:** [AGENTS.md](https://github.com/aethersdr/AetherSDR/blob/178f911efe8b28249ab227c43a229921a6ec6972/AGENTS.md)
 - **Captured on:** 2026-08-01 (each source pinned at the revision shown above)
 
+> **Update, 2026-10-06 (re-verified at source).** The stance is unchanged: CONTRIBUTING.md still says "We **strongly encourage all contributors to use Claude Code**", and bot-opened PRs still need a human reviewer. **One row below is out of date.** The AI-instruction files are no longer maintainer-only: current CONTRIBUTING.md puts `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md` and `.claude/commands/` in Tier 2 (`@aethersdr/infrastructure`), with the sub-docs under `docs/agents/` added on 2026-10-01. The project's reason (verbatim): "`AGENTS.md`, `CLAUDE.md`, and `GEMINI.md` are Tier 2 because their content is operational". Governance documents (`CONSTITUTION.md`, `GOVERNANCE.md`, `CONTRIBUTING.md`) stay Tier 1 and outrank them. This move happened after the pinned 2026-08-01 revision and was missed by the 2026-09-25 re-verification.
+
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |

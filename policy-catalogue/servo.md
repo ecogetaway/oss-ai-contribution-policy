@@ -1,8 +1,11 @@
 # servo/servo — AI-contribution policy (catalogue entry)
 
 - **Project:** [servo/servo](https://github.com/servo/servo)
-- **Policy location:** [The Servo Book § "AI contributions"](https://book.servo.org/contributing/getting-started.html) ([source](https://github.com/servo/book/blob/main/src/contributing/getting-started.md))
+- **Policy location:** [The Servo Book § "AI Usage"](https://book.servo.org/policy/ai-usage.html) ([source](https://github.com/servo/book/blob/main/src/policy/ai-usage.md)); until 2026-10-05 it was in ["Getting started"](https://github.com/servo/book/blob/36b3916fce/src/contributing/getting-started.md)
 - **Captured on:** 2026-07-11
+
+> **Update, 2026-10-06 (re-verified at source).** The policy has moved, unchanged. On 2026-10-05 the Servo Book gave it its own page, [Project Policy § AI Usage](https://book.servo.org/policy/ai-usage.html) ([source](https://github.com/servo/book/blob/b80695f761/src/policy/ai-usage.md)), and removed it from "Getting started" ([servo/book#282](https://github.com/servo/book/pull/282)). The text, rationale and FAQ are the same as before; the quotation below is still current.
+
 
 ## Policy substance (mapped to schema fields)
 

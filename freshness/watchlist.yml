@@ -13,7 +13,7 @@
 
 sources:
   - id: aethersdr
-    verified: 2026-09-25
+    verified: 2026-10-06
     github: [{repo: aethersdr/AetherSDR, path: CONTRIBUTING.md}]
     anchors: [{url: "https://raw.githubusercontent.com/aethersdr/AetherSDR/main/CONTRIBUTING.md", text: "Claude Code"}]
 
@@ -34,7 +34,7 @@ sources:
     anchors: [{url: "https://raw.githubusercontent.com/curl/curl/master/docs/CONTRIBUTE.md", text: "We can accept code written with the help of AI"}]
 
   - id: fedora
-    verified: 2026-09-25
+    verified: 2026-10-06
     manual: "https://docs.fedoraproject.org/en-US/council/policy/ai-contribution-policy/ (Version 1.0, last review 2025-10-24 when checked). Behind a bot challenge; open it in a browser and compare the version and last-review date."
 
   - id: freebsd
@@ -68,7 +68,7 @@ sources:
     anchors: [{url: "https://www.kubernetes.dev/docs/guide/pull-requests/", text: "Using AI tools to help write your PR is acceptable"}]
 
   - id: llama-cpp
-    verified: 2026-09-25
+    verified: 2026-10-06
     github:
       - {repo: ggml-org/llama.cpp, path: AGENTS.md}
       - {repo: ggml-org/llama.cpp, path: CONTRIBUTING.md}
@@ -109,9 +109,9 @@ sources:
       - {url: "https://raw.githubusercontent.com/rust-lang/rust-forge/master/src/policies/llm-usage.md", text: "Posting both your original message and the translated version is always ok"}
 
   - id: servo
-    verified: 2026-09-25
-    github: [{repo: servo/book, path: src/contributing/getting-started.md}]
-    anchors: [{url: "https://raw.githubusercontent.com/servo/book/main/src/contributing/getting-started.md", text: "probabilistic tools"}]
+    verified: 2026-10-06
+    github: [{repo: servo/book, path: src/policy/ai-usage.md}]
+    anchors: [{url: "https://raw.githubusercontent.com/servo/book/main/src/policy/ai-usage.md", text: "probabilistic tools"}]
 
   - id: tldraw
     verified: 2026-09-25

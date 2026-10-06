@@ -4,6 +4,9 @@
 - **Policy location:** split across three files — [AGENTS.md](https://github.com/ggml-org/llama.cpp/blob/555881ebc8b0fc0402b30e09258a32a7bfd13c52/AGENTS.md), [CONTRIBUTING.md § AI Usage Policy](https://github.com/ggml-org/llama.cpp/blob/555881ebc8b0fc0402b30e09258a32a7bfd13c52/CONTRIBUTING.md), and the [pull request template](https://github.com/ggml-org/llama.cpp/blob/555881ebc8b0fc0402b30e09258a32a7bfd13c52/.github/pull_request_template.md). Current wording adopted in [PR #26012](https://github.com/ggml-org/llama.cpp/pull/26012) (merged 2026-07-22), tidied in [PR #26030](https://github.com/ggml-org/llama.cpp/pull/26030) (2026-07-23).
 - **Captured on:** 2026-07-25 (links pinned to `555881e`)
 
+> **Update, 2026-10-06 (re-verified at source).** AGENTS.md was reorganised on 2026-10-04 (ggml-org/llama.cpp#29656). The policy this entry records is unchanged, and every quotation below is still current. One agent-facing instruction was removed: the all-caps rule that an agent must refuse to write any PR description, comment or reply on the user's behalf. AI-written PR descriptions, commit messages and reviewer responses remain under "Prohibited AI Usage (results in immediate PR closure)".
+
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |
