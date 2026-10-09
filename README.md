@@ -4,7 +4,7 @@ This repository defines a **draft** machine-readable shape — **`ai-contributio
 
 # OSS AI-Contribution Policy
 
-**Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Aniruddh Raghavendra). Full portfolio under [Companion Projects](#companion-projects).
+**Provenance.** Part of the **OSS Infrastructure Initiative** (Sanjay C. and Anirudh Raghavendra). Full portfolio under [Companion Projects](#companion-projects).
 
 **Overview and related work:** the [AI contribution policy workstream page](https://oss-infrastructure-initiative.netlify.app/ai-contribution-policy) on the OSS Infrastructure Initiative site, alongside the [other workstreams](https://oss-infrastructure-initiative.netlify.app/). How the research is done: [method and evidence rules](https://ecogetaway.github.io/method.html).
 
