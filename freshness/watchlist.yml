@@ -34,7 +34,7 @@ sources:
     anchors: [{url: "https://raw.githubusercontent.com/curl/curl/master/docs/CONTRIBUTE.md", text: "We can accept code written with the help of AI"}]
 
   - id: fedora
-    verified: 2026-10-06
+    verified: 2026-10-12
     manual: "https://docs.fedoraproject.org/en-US/council/policy/ai-contribution-policy/ (Version 1.0, last review 2025-10-24 when checked). Behind a bot challenge; open it in a browser and compare the version and last-review date."
 
   - id: freebsd
