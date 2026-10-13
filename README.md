@@ -92,7 +92,7 @@ A growing catalogue of existing per-project policies ([`policy-catalogue/`](poli
 | [Ghostty](policy-catalogue/ghostty.md) | disclosed-allowed | Vouch system; public denouncement list; AI media prohibited |
 | [LLVM](policy-catalogue/llvm.md) | disclosed-allowed | `Assisted-by:` trailer; autonomous agents banned |
 | [curl](policy-catalogue/curl.md) | disclosed-allowed | Stricter rules for security reports; bug bounty ended Jan 2026 → [case study](case-studies/curl-bug-bounty-closure.md) |
-| [Godot](policy-catalogue/godot.md) | disclosed-allowed (agents) | Policy addressed to the AI agent itself |
+| [Godot](policy-catalogue/godot.md) | prohibited (autonomous agents); restricted (AI code assistance) | Auto-ban for autonomous agent use; no substantial AI-generated code |
 | [NetBSD](policy-catalogue/netbsd.md) | prohibited-unless-escalated | LLM output "presumed tainted"; core-approval exception |
 | [QEMU](policy-catalogue/qemu.md) | prohibited | Ban derived from DCO/copyright provenance |
 | [servo](policy-catalogue/servo.md) | prohibited | Four argued rationales; explicit revisit clause |
