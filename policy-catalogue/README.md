@@ -15,7 +15,7 @@ Why this matters: schema v0.2 keeps only the fields this catalogue proves projec
 | [Ghostty](ghostty.md) | disclosed-allowed | Vouch system for first-timers; public denouncement list; media prohibited |
 | [LLVM](llvm.md) | disclosed-allowed | `Assisted-by:` trailer; autonomous agents banned; good-first-issue carve-out |
 | [curl](curl.md) | disclosed-allowed | Separate, stricter rules for security reports; bug bounty ended Jan 2026 |
-| [Godot](godot.md) | disclosed-allowed (agents) | Policy addressed to the AI agent itself, with prescribed disclosure format |
+| [Godot](godot.md) | restricted; autonomous agents prohibited | 2026-06-30 announcement: menial AI help only, disclosed; no substantial AI-generated code; auto-ban for autonomous agents |
 | [Kubernetes](kubernetes.md) | disclosed-allowed (per-asset split) | AI-assisted PRs allowed, AI-generated commit messages banned; explicitly bans the commit-trailer disclosure pattern Fedora recommends |
 | [Fedora](fedora.md) | disclosed-allowed | Restricts AI from governance decision-making (Council-approved 2025-10-22). *Corrected 2026-09-25:* the translation encouragement was in the proposal only; the adopted policy (v1.0) exempts grammar and clarity help from disclosure |
 | [NetBSD](netbsd.md) | prohibited-unless-escalated | LLM output "presumed tainted"; exception via written core approval |

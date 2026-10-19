@@ -53,8 +53,11 @@ sources:
     anchors: [{url: "https://raw.githubusercontent.com/ghostty-org/ghostty/main/AI_POLICY.md", text: "All AI usage in any form must be disclosed"}]
 
   - id: godot
-    verified: 2026-09-25
-    github: [{repo: godotengine/godot, path: CONTRIBUTING.md}]
+    verified: 2026-10-19
+    github:
+      - {repo: godotengine/godot, path: CONTRIBUTING.md}
+      - {repo: godotengine/godot-website, path: collections/_article/contribution-policy-2026.md}
+    anchors: [{url: "https://godotengine.org/article/contribution-policy-2026/", text: "No autonomous AI agent use or vibe coding"}]
 
   - id: home-assistant
     verified: 2026-09-25
