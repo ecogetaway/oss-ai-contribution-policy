@@ -4,6 +4,12 @@
 - **Policy location:** [`AI_POLICY.md`](https://github.com/home-assistant/core/blob/702a9cb7289e535927f5279190bcad6ffc5d3fd0/AI_POLICY.md), added [2026-07-21 (#176917)](https://github.com/home-assistant/core/pull/176917); referenced from [`CONTRIBUTING.md`](https://github.com/home-assistant/core/blob/702a9cb7289e535927f5279190bcad6ffc5d3fd0/CONTRIBUTING.md) and [`AGENTS.md`](https://github.com/home-assistant/core/blob/702a9cb7289e535927f5279190bcad6ffc5d3fd0/AGENTS.md). The file declares itself a copy: canonical version at <https://developers.home-assistant.io/docs/ai_policy>
 - **Captured on:** 2026-07-25 (repo copy pinned to `702a9cb`)
 
+> **Update, 2026-10-21 (re-verified at source).** The policy's substance is unchanged, and the quotations below still match the repository copy. Three things have changed around it:
+>
+> - **The published version was rewritten in plainer words** (page last updated 2026-10-12) and moved to [contributors.home-assistant.io/start/ai-policy](https://contributors.home-assistant.io/start/ai-policy/). The old `developers.home-assistant.io` address redirects there. Because the policy says the published version applies, the wording that binds contributors now differs from the repository text quoted here, though not in substance.
+> - **A second repository copy** was added to the organisation's [`.github` repository](https://github.com/home-assistant/.github/blob/main/AI_POLICY.md) on 2026-10-06, and the published page names that one as the copy.
+> - **The published page now documents the pull-request template questions.** Core and frontend carry two checkboxes, "I understand the code I am submitting and can explain how it works" and "Any generated code has been carefully reviewed for correctness and compliance with project standards". These are attestations, and they were already in core's template when this entry was captured (added 2025-09-15), so the attestations row below should have cited them. The Android and iOS apps instead ask contributors to choose one of three options: no AI used, AI assistance used, or AI fully generated the code but the contributor reviewed and understood it. That is a disclosure mechanism, though not one core uses.
+
 ## Policy substance (mapped to schema fields)
 
 | Schema field | This project's position |

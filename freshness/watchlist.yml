@@ -60,8 +60,10 @@ sources:
     anchors: [{url: "https://godotengine.org/article/contribution-policy-2026/", text: "No autonomous AI agent use or vibe coding"}]
 
   - id: home-assistant
-    verified: 2026-09-25
-    github: [{repo: home-assistant/core, path: AI_POLICY.md}]
+    verified: 2026-10-21
+    github:
+      - {repo: home-assistant/core, path: AI_POLICY.md}
+      - {repo: home-assistant/.github, path: AI_POLICY.md}
     anchors:
       - {url: "https://raw.githubusercontent.com/home-assistant/core/dev/AI_POLICY.md", text: "Including your original text in a details block"}
       - {url: "https://raw.githubusercontent.com/home-assistant/core/dev/AI_POLICY.md", text: "We do not allow autonomous agents to be used for contributing to our projects"}
@@ -71,7 +73,7 @@ sources:
     anchors: [{url: "https://www.kubernetes.dev/docs/guide/pull-requests/", text: "Using AI tools to help write your PR is acceptable"}]
 
   - id: llama-cpp
-    verified: 2026-10-06
+    verified: 2026-10-21
     github:
       - {repo: ggml-org/llama.cpp, path: AGENTS.md}
       - {repo: ggml-org/llama.cpp, path: CONTRIBUTING.md}
