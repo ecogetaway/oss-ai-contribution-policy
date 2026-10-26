@@ -86,11 +86,12 @@ sources:
     anchors: [{url: "https://raw.githubusercontent.com/llvm/llvm-project/main/llvm/docs/AIToolPolicy.md", text: "Assisted-by"}]
 
   - id: mesa
-    verified: 2026-10-12
+    verified: 2026-10-26
     gitlab: [{host: gitlab.freedesktop.org, project: mesa/mesa, path: docs/submittingpatches.rst}]
     anchors:
       - {url: "https://gitlab.freedesktop.org/mesa/mesa/-/raw/main/docs/submittingpatches.rst", text: "Generated-by"}
       - {url: "https://gitlab.freedesktop.org/mesa/mesa/-/raw/main/docs/submittingpatches.rst", text: "shouldn't be used to generate code comments"}
+      - {url: "https://gitlab.freedesktop.org/mesa/mesa/-/raw/main/docs/submittingpatches.rst", text: "Do not advertise the model"}
 
   - id: netbsd
     verified: 2026-09-25
@@ -114,7 +115,7 @@ sources:
       - {url: "https://raw.githubusercontent.com/rust-lang/rust-forge/master/src/policies/llm-usage.md", text: "Posting both your original message and the translated version is always ok"}
 
   - id: servo
-    verified: 2026-10-06
+    verified: 2026-10-26
     github: [{repo: servo/book, path: src/policy/ai-usage.md}]
     anchors: [{url: "https://raw.githubusercontent.com/servo/book/main/src/policy/ai-usage.md", text: "probabilistic tools"}]
 
