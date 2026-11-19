@@ -13,7 +13,7 @@
 
 sources:
   - id: aethersdr
-    verified: 2026-10-12
+    verified: 2026-11-19
     github: [{repo: aethersdr/AetherSDR, path: CONTRIBUTING.md}]
     anchors: [{url: "https://raw.githubusercontent.com/aethersdr/AetherSDR/main/CONTRIBUTING.md", text: "Claude Code"}]
 
@@ -22,7 +22,7 @@ sources:
     anchors: [{url: "https://asahilinux.org/llm-policy/", text: "we broadly forbid the use of generative AI tooling for material contributions"}]
 
   - id: bevy
-    verified: 2026-09-25
+    verified: 2026-11-19
     github: [{repo: bevyengine/bevy-website, path: content/learn/contribute/policies/ai.md}]
     anchors:
       - {url: "https://raw.githubusercontent.com/bevyengine/bevy-website/main/content/learn/contribute/policies/ai.md", text: "tolerate careful human-driven AI use in some code-related areas"}
@@ -34,7 +34,7 @@ sources:
     anchors: [{url: "https://raw.githubusercontent.com/curl/curl/master/docs/CONTRIBUTE.md", text: "We can accept code written with the help of AI"}]
 
   - id: fedora
-    verified: 2026-10-12
+    verified: 2026-11-19
     manual: "https://docs.fedoraproject.org/en-US/council/policy/ai-contribution-policy/ (Version 1.0, last review 2025-10-24 when checked). Behind a bot challenge; open it in a browser and compare the version and last-review date."
 
   - id: freebsd
